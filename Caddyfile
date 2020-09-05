@@ -8,6 +8,9 @@ sub.domain.com {
 //for reverse proxy (Flask project)
 //gunicorn command:
 //gunicorn -b "127.0.0.1:4000" website:app &
+//note in above 'app' is run via the app.run() function
+//also 'website' is the name of the module where 'app' is found
+
 sub2.domain.com {
   reverse_proxy localhost:4000
 }
